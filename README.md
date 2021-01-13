@@ -4,15 +4,11 @@ Step 0.
 Pre-installation. You need ready Docker Swarm, master and worker hosts.
 
 Step 1. 
-Create portainer volume
+Create portainer volume:
 sudo docker volume create -d local portainer_data
 
 Step 2. 
-Create portainer volume
-sudo docker volume create -d local portainer_data
-
-Step 3. 
-Create service portainer
+Create service portainer:
 sudo docker service create \
 --name portainer --publish 8000:9000 \
 --constraint 'node.role == manager' \
@@ -21,5 +17,5 @@ sudo docker service create \
 portainer/portainer \
 -H unix:///var/run/docker.sock
 
-Step 4. 
+Step 3. 
 Go to browser and enter service address: your-public-ipaddress:8000
