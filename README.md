@@ -3,7 +3,7 @@ Install portainer service in Docker Swarm
 Step 0. 
 Pre-installation. You need ready Docker Swarm, master and worker hosts.
 You can download this repo and execute file install_portainer.sh
-Check before start script:  chmod u+x install_portainer.sh
+Check before start script:  chmod u+x install_portainer.sh or do this -->
 
 Step 1. 
 Create portainer volume:
